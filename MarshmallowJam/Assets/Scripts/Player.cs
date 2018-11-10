@@ -26,13 +26,17 @@ public class Player : MonoBehaviour {
 
     void MovePlayer()
     {
-        if(Input.GetKeyDown(inputs[3])) //D key
+        if(Input.GetKey(inputs[3])) //D key
         {
             rb.velocity = Vector2.right * speed;
         }
-        else if(Input.GetKeyDown(inputs[1]))
+        else if(Input.GetKey(inputs[1]))
         {
             rb.velocity = Vector2.right * speed * -1f;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
         }
     }
 }
