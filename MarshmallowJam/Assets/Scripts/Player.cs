@@ -26,17 +26,20 @@ public class Player : MonoBehaviour {
 
     void MovePlayer()
     {
+        Vector2 move = rb.velocity;
         if(Input.GetKey(inputs[3])) //D key
         {
-            rb.velocity = Vector2.right * speed;
+           move = Vector2.right * speed;
         }
         else if(Input.GetKey(inputs[1]))
         {
-            rb.velocity = Vector2.right * speed * -1f;
+            move = Vector2.right * speed * -1f;
         }
         else
         {
-            rb.velocity = Vector2.zero;
+            move = Vector2.zero;
         }
+        move.y = rb.velocity.y;
+        rb.velocity = move;
     }
 }
