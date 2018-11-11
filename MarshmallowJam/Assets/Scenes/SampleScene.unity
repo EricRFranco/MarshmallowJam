@@ -329,6 +329,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   papa: {fileID: 1072566145}
+--- !u!1 &791961979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791961981}
+  - component: {fileID: 791961980}
+  m_Layer: 0
+  m_Name: Player2_PickupPoint
+  m_TagString: Player2_Pickup
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &791961980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791961979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e175921a4f9aa458713e279b6d6e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  papa: {fileID: 1990530392}
+--- !u!4 &791961981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791961979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0756549, y: -0.8351869, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1072566145
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   inputs: 77000000610000007300000064000000
+  maxRefresh: 1
 --- !u!61 &1072566147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -515,6 +557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   inputs: 11010000140100001201000013010000
+  maxRefresh: 0
 --- !u!61 &1990530395
 BoxCollider2D:
   m_ObjectHideFlags: 0
