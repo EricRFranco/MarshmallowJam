@@ -7,7 +7,7 @@ public class PlayerTwo : Player {
     public override void Awake()
     {
         base.Awake();
-        this.inputs = new KeyCode[]{KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow};
+        this.inputs = new KeyCode[]{KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow, KeyCode.RightControl, KeyCode.Keypad0};
     }
     
     // Use this for initialization
